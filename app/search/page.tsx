@@ -3,6 +3,7 @@ import Search from "../ui/search";
 import MoviesGrid from "../ui/movies-grid";
 import MoviesGridSkeleton from "../ui/skeletons/movies-grid-skeleton";
 import MagnifyingGlass from "../ui/icons/magnifying-glass";
+import TestFetch from "../ui/testFetch";
 
 export default function Home({
   searchParams,
@@ -25,7 +26,7 @@ export default function Home({
         />
       </div>
       {!query.length ? (
-        <MagnifyingGlass className="fill-gray-900 w-44 h-44" />
+        <TestFetch />
       ) : (
         <Suspense fallback={<MoviesGridSkeleton />}>
           <MoviesGrid query={query} currentPage={currentPage} />
