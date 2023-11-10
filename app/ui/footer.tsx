@@ -12,7 +12,7 @@ export default function Footer() {
       </div>
       <div className="flex flex-row justify-center items-center gap-4">
         <p className="text-xs text-gray-600">check the source code on github</p>
-        <a href="" target="_blank">
+        <a href="https://github.com/63r6o/films-folder" target="_blank">
           <GithubLogo className="w-10 h-10 opacity-50 hover:opacity-100 hover:cursor-pointer" />
         </a>
       </div>
