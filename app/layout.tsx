@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { workSans } from "./ui/fonts";
 import { pleatures } from "./ui/fonts";
-import { pleaturesOutline } from "./ui/fonts";
 import Link from "next/link";
 import Footer from "./ui/footer";
+import Navlinks from "./ui/navlinks";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,6 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${workSans.className} antialiased`}>
+        <nav className="w-full h-16 sm:h-12 flex flex-row px-14 items-center gap-6 bg-gray-900/50 text-2xl sm:text-xl shadow-sm">
+          <Navlinks />
+        </nav>
         <header className="flex flex-col items-center px-14 pt-14 w-full">
           <Link href="/">
             <h1

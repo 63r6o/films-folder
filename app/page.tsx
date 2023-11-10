@@ -6,7 +6,7 @@ import MoviesMarquee from "./ui/movies-marquee";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col p-24 gap-16">
+    <main className="flex min-h-screen flex-col px-14 lg:px-24 pb-24 pt-14 gap-16">
       <Suspense fallback={<MoviesGridSkeleton />}>
         <TestFetch />
       </Suspense>
