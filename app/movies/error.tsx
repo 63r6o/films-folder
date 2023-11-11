@@ -2,7 +2,6 @@
 
 import { useEffect } from "react";
 import { pleatures, pleaturesOutline } from "../ui/fonts";
-import Link from "next/link";
 
 export default function Error({
   error,
@@ -28,12 +27,12 @@ export default function Error({
         >
           Try again
         </button>
-        <Link
+        <a
           className={`${pleatures.className} text-black rounded-full bg-violet-400 p-3 hover:cursor-pointer hover:bg-violet-500 active:scale-95`}
           href="/"
         >
           Go back
-        </Link>
+        </a>
       </div>
     </main>
   );

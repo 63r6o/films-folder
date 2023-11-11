@@ -1,5 +1,4 @@
 import { pleatures, pleaturesOutline } from "./ui/fonts";
-import Link from "next/link";
 
 export default function NotFoundPage() {
   return (
@@ -8,12 +7,12 @@ export default function NotFoundPage() {
         404
       </h2>
       <p>Something went wrong :(</p>
-      <Link
+      <a
         className={`${pleatures.className} text-black rounded-full bg-violet-400 p-3 hover:cursor-pointer hover:bg-violet-500 active:scale-95`}
         href="/"
       >
         Go back
-      </Link>
+      </a>
     </main>
   );
 }

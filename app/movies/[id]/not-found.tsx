@@ -7,12 +7,12 @@ export default function NotFound() {
       <h2 className={`${pleaturesOutline.className} text-4xl text-red-400`}>
         Could not find the movie :(
       </h2>
-      <Link
+      <a
         className={`${pleatures.className} text-black rounded-full bg-violet-400 p-3 hover:cursor-pointer hover:bg-violet-500 active:scale-95`}
         href="/"
       >
         Go back
-      </Link>
+      </a>
     </main>
   );
 }
