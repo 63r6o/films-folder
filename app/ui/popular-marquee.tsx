@@ -30,7 +30,7 @@ export default async function PopularMarquee() {
             </div>
           ))}
         </Marquee>
-        <div className="absolute top-0 z-10 pointer-events-none w-full h-full bg-gradient-to-r from-gray-950 via-transparent to-gray-950"></div>
+        <div className="absolute top-0 z-10 pointer-events-none w-full h-full bg-gradient-to-r from-[#040405] via-transparent to-[#040405]"></div>
       </div>
     </div>
   );
