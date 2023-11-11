@@ -1,6 +1,7 @@
 import { fetchFilteredMovies } from "../lib/data";
 import MovieCard from "./movie-card";
 import { pleaturesOutline } from "./fonts";
+import { notFound } from "next/navigation";
 
 export default async function MoviesGrid({
   query,
@@ -9,7 +10,9 @@ export default async function MoviesGrid({
   query: string;
   currentPage: number;
 }) {
-  const { results } = await fetchFilteredMovies(query, currentPage);
+  const result = await fetchFilteredMovies(query, currentPage);
+  if (!result) notFound();
+  const { results } = result;
 
   if (!results.length)
     return (

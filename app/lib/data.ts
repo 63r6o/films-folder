@@ -23,8 +23,7 @@ export async function fetchPopularMovies() {
 
         return data;
     } catch (error) {
-        console.log(error);
-        throw new Error("Failed to fetch popular movies");
+        console.error(error);
     }
 }
 
@@ -43,8 +42,7 @@ export async function fetchNowPlaying() {
 
         return data;
     } catch (error) {
-        console.log(error);
-        throw new Error("Failed to fetch now playing movies");
+        console.error(error);
     }
 }
 
@@ -65,8 +63,7 @@ export async function fetchFilteredMovies(query: string, currentPage: number) {
 
         return data;
     } catch (error) {
-        console.log(error);
-        throw new Error("Failed to fetch search query");
+        console.error(error);
     }
 }
 
@@ -86,7 +83,6 @@ export async function fetchMovieDetails(id: string) {
 
         return data;
     } catch (error) {
-        console.log(error);
-        throw new Error("Failed to fetch movie details");
+        console.error(error);
     }
 }

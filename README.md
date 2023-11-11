@@ -51,5 +51,5 @@ This project uses the [Pleatures font](https://www.fontspace.com/pleatures-font-
 
 - [ ] Implement proper pagination.
 - [ ] Clean up the CSS.
-- [ ] Integrate error handling.
+- [x] Integrate error handling.
 - [ ] Add metadata, enhance SEO and accessibility.

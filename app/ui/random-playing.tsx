@@ -3,15 +3,18 @@ import { fetchMovieDetails, fetchNowPlaying } from "../lib/data";
 import { placeholderBlur } from "../lib/placeholder-blur";
 import GenreTag from "./genre-tag";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 export default async function RandomPlaying() {
   const nowPlaying = await fetchNowPlaying();
+  if (!nowPlaying) notFound();
 
   const randomId =
     nowPlaying.results[Math.floor(Math.random() * nowPlaying.results.length)]
       .id;
 
   const random = await fetchMovieDetails(randomId);
+  if (!random) notFound();
 
   const releaseDate = new Date(random.release_date);
   const runtime = `${Math.floor(random.runtime / 60)}h ${random.runtime % 60}m`;

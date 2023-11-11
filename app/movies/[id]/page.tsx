@@ -2,9 +2,12 @@ import { fetchMovieDetails } from "@/app/lib/data";
 import { placeholderBlur } from "@/app/lib/placeholder-blur";
 import GenreTag from "@/app/ui/genre-tag";
 import Image from "next/image";
+import { notFound } from "next/navigation";
 
 export default async function Page({ params }: { params: { id: string } }) {
     const movie = await fetchMovieDetails(params.id);
+
+    if (!movie) notFound();
 
     const releaseDate = new Date(movie.release_date);
 
@@ -62,27 +65,3 @@ export default async function Page({ params }: { params: { id: string } }) {
         </main>
     );
 }
-
-// <Image
-//     src={posterUrl}
-//     width={342}
-//     height={513}
-//     alt={`The poster of ${movie.title}`}
-// />
-
-// <div className="w-65">
-//     <Image
-//         src={posterUrl}
-//         width={780}
-//         height={1200}
-//         alt={`The poster of ${movie.title}`}
-//     />
-// </div>
-// <div className="w-96">
-//     <Image
-//         src={backdropUrl}
-//         width={1280}
-//         height={600}
-//         alt={`An image from ${movie.title}`}
-//     />
-// </div>

@@ -3,9 +3,12 @@ import Image from "next/image";
 import { placeholderBlur } from "../lib/placeholder-blur";
 import Marquee from "react-fast-marquee";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 export default async function PopularMarquee() {
-  const { results } = await fetchPopularMovies();
+  const result = await fetchPopularMovies();
+  if (!result) notFound();
+  const { results } = result;
 
   return (
     <div className="w-full max-w-6xl ">
