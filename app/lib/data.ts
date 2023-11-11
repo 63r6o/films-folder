@@ -28,7 +28,6 @@ export async function fetchPopularMovies() {
     }
 }
 
-// TODO: do something with it
 export async function fetchNowPlaying() {
     try {
         const response = await fetch(
