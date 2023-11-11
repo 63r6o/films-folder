@@ -8,7 +8,7 @@ export default async function PopularMarquee() {
   const { results } = await fetchPopularMovies();
 
   return (
-    <div className="w-full">
+    <div className="w-full max-w-6xl ">
       <h2 className="text-2xl text-gray-300 px-2 py-4">Popular movies</h2>
       <div className="relative h-full">
         <Marquee speed={36} pauseOnHover>

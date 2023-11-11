@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Movie } from "../lib/types";
 import Link from "next/link";
-import genreMap from "../lib/genres";
 import GenreTag from "./genre-tag";
 import { placeholderBlur } from "../lib/placeholder-blur";
 

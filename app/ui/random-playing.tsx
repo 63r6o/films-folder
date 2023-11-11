@@ -21,7 +21,7 @@ export default async function RandomPlaying() {
     }`;
 
   return (
-    <div className="w-full">
+    <div className="w-full max-w-6xl ">
       <h2 className="text-2xl text-gray-300 px-2 py-4">Now playing</h2>
       <div
         className="flex flex-row flex-wrap items-end w-full h-96 bg-cover bg-center"
