@@ -1,4 +1,4 @@
-# films-Folder <img width="50" alt="hottakes-logo" src="https://github.com/63r6o/films-folder/assets/102681223/9158d753-f0e4-4aaf-9977-193a2dfe3d82">
+# films-Folder <img width="50" alt="films-folder-logo" src="https://github.com/63r6o/films-folder/assets/102681223/5388d47c-5ce1-4ebf-b1ab-c364f7ef567b">
 
 
 
@@ -12,17 +12,20 @@ It has been deployed [here](https://films-folder.vercel.app/).
 
 - Displays information about a randomly selected movie currently playing in theaters.
 - Showcases a marquee of trending movies.
-  ![main-screen](https://github.com/63r6o/films-folder/assets/102681223/6194e701-2ea0-4247-9046-90a397501b51)
+![main-screen](https://github.com/63r6o/films-folder/assets/102681223/42f65d37-0e75-4316-b74b-6ae63e2a1689)
+
 
 ### 2. Search Screen
 
 - Enables users to search for movies by name, providing a convenient way to discover specific titles.
-  ![search-screen](https://github.com/63r6o/films-folder/assets/102681223/315abbe7-aee7-4350-bfe5-f9451854e9ca)
+![search-screen](https://github.com/63r6o/films-folder/assets/102681223/4136b4f3-3104-4125-8a8e-4fc6da87df80)
+
 
 ### 3. Details Page
 
 - Offers in-depth information about a selected movie, allowing users to delve into additional details.
-  ![details-screen](https://github.com/63r6o/films-folder/assets/102681223/da9e2727-a9d6-4504-8c8a-e9b1b5df498d)
+![details-screen](https://github.com/63r6o/films-folder/assets/102681223/361c36a6-92ee-47e5-a5ff-d9d7082d85c9)
+
 
 ## Getting Started
 
