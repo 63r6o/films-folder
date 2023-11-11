@@ -1,4 +1,6 @@
-# films-Folder
+# films-Folder <img width="50" alt="hottakes-logo" src="https://github.com/63r6o/films-folder/assets/102681223/9158d753-f0e4-4aaf-9977-193a2dfe3d82">
+
+
 
 A Next.js project using the new app router, incorporating TypeScript, Tailwind CSS, and the TMDB API.
 
