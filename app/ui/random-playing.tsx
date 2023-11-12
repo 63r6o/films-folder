@@ -25,10 +25,10 @@ export default async function RandomPlaying() {
     }`;
 
   return (
-    <div className="w-full max-w-6xl ">
+    <section className="w-full max-w-6xl ">
       <h2 className="text-2xl text-gray-300 px-2 py-4">Now playing</h2>
-      <div
-        className="flex flex-row flex-wrap items-end w-full h-96 bg-cover bg-center"
+      <article
+        className="flex flex-wrap items-end h-96 bg-cover bg-center"
         style={{ backgroundImage: `url(${backdropUrl})` }}
       >
         <div className="relative shadow-md h-2/3 scale-110 hover:scale-125 transition ease-in-out z-10 flex-shrink-0">
@@ -44,7 +44,7 @@ export default async function RandomPlaying() {
             />
           </Link>
         </div>
-        <div className="px-8 py-4 bg-gray-950/50 backdrop-blur-md h-fit flex-1 min-w-fit">
+        <div className="px-8 py-4 bg-gray-950/50 backdrop-blur-md flex-1 min-w-fit">
           <h2 className="text-2xl">{random.title}</h2>
           <div className="flex gap-2 text-sm pb-4">
             <span>{releaseDate.getUTCFullYear()}</span>
@@ -57,7 +57,7 @@ export default async function RandomPlaying() {
             ))}
           </div>
         </div>
-      </div>
-    </div>
+      </article>
+    </section>
   );
 }

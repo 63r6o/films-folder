@@ -47,7 +47,7 @@ export default function Search({
       </label>
       <input
         name="query"
-        className="rounded-full pl-7 pr-28 py-4 w-full bg-gray-800 outline-white shadow-md"
+        className="rounded-full pl-7 pr-28 py-4 w-full bg-gray-800 outline-white active:outline-white shadow-md"
         placeholder={placeholder}
         onChange={(e) => handleSearch(e.target.value)}
         defaultValue={searchParams.get("query")?.toString()}
