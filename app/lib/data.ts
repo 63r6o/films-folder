@@ -38,6 +38,7 @@ export async function fetchNowPlaying() {
             throw new Error("Failed to fetch now playing movies");
         }
 
+        // TODO check this properly
         const data: DiscoverQueryResult = await response.json();
 
         return data;
@@ -79,6 +80,7 @@ export async function fetchMovieDetails(id: string) {
             throw new Error("Failed to fetch search query");
         }
 
+        // TODO check this properly
         const data: MovieDetails = await response.json();
 
         return data;

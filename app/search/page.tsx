@@ -3,6 +3,7 @@ import Search from "../ui/search";
 import MoviesGrid from "../ui/movies-grid";
 import MoviesGridSkeleton from "../ui/skeletons/movies-grid-skeleton";
 import PopularMarquee from "../ui/popular-marquee";
+import PopularMarqueeSkeleton from "../ui/skeletons/popular-marquee-skeleton";
 
 export default function Home({
   searchParams,
@@ -25,7 +26,9 @@ export default function Home({
         />
       </div>
       {!query.length ? (
-        <PopularMarquee />
+        <Suspense fallback={<PopularMarqueeSkeleton />}>
+          <PopularMarquee />
+        </Suspense>
       ) : (
         <Suspense fallback={<MoviesGridSkeleton />}>
           <MoviesGrid query={query} currentPage={currentPage} />
