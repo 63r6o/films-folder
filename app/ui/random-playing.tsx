@@ -27,10 +27,17 @@ export default async function RandomPlaying() {
   return (
     <section className="w-full max-w-6xl ">
       <h2 className="text-2xl text-gray-300 px-2 py-4">Now playing</h2>
-      <article
-        className="flex flex-wrap items-end h-96 bg-cover bg-center"
-        style={{ backgroundImage: `url(${backdropUrl})` }}
-      >
+      <article className="relative flex flex-wrap items-end h-96">
+        <Image
+          src={backdropUrl}
+          fill
+          priority
+          placeholder="blur"
+          blurDataURL={placeholderBlur}
+          className="h-full w-full"
+          style={{ objectFit: "cover", objectPosition: "center" }}
+          alt={`An image from ${random.title}`}
+        />
         <div className="relative shadow-md h-2/3 scale-110 hover:scale-125 transition ease-in-out z-10 flex-shrink-0">
           <Link href={`/movies/${random.id}`}>
             <Image
@@ -40,7 +47,7 @@ export default async function RandomPlaying() {
               className="w-min h-full border-4 rounded-xl border-white"
               placeholder="blur"
               blurDataURL={placeholderBlur}
-              alt={`The poster of ${posterUrl}`}
+              alt={`The poster of ${random.title}`}
             />
           </Link>
         </div>

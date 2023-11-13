@@ -14,7 +14,7 @@ export default async function PopularMarquee() {
     <section className="w-full max-w-6xl ">
       <h2 className="text-2xl text-gray-300 px-2 py-4">Popular movies</h2>
       <article className="relative">
-        <Marquee speed={36} pauseOnHover>
+        <Marquee speed={36}>
           {results.map((movie) => (
             <div key={movie.id} className="h-48 w-full">
               <Link href={`/movies/${movie.id}`}>

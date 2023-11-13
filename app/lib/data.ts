@@ -49,11 +49,14 @@ export async function fetchNowPlaying() {
 
 export async function fetchFilteredMovies(query: string, currentPage: number) {
     try {
-        const response = await fetch(`${baseUrl}/search/movie?query=${query}`, {
-            headers,
-            method: "Get",
-            cache: "no-store",
-        });
+        const response = await fetch(
+            `${baseUrl}/search/movie?query=${query}&page=${currentPage}`,
+            {
+                headers,
+                method: "Get",
+                cache: "no-store",
+            }
+        );
 
         if (!response.ok) {
             throw new Error("Failed to fetch search query");

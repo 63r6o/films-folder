@@ -49,7 +49,7 @@ This project uses the [Pleatures font](https://www.fontspace.com/pleatures-font-
 
 ## To-Do List
 
-- [ ] Implement proper pagination.
+- [x] Implement proper pagination.
 - [x] Clean up the CSS.
 - [x] Integrate error handling.
 - [x] Add metadata, enhance SEO and accessibility.

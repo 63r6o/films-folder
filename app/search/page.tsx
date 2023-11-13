@@ -17,7 +17,7 @@ export default function Home({
   const currentPage = Number(searchParams?.page) || 1;
 
   return (
-    <main className="flex min-h-screen flex-col items-center px-14 lg:px-24 pb-24 pt-14 gap-16">
+    <main className="flex min-h-screen flex-col items-center px-14 lg:px-24 pt-14 gap-16">
       <div className="sticky top-2 w-full max-w-4xl z-20 shadow-sm">
         <Search
           label="Search a movie"

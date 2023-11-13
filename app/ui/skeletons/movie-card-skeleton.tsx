@@ -1,5 +1,5 @@
 export default function MovieCardSkeleton() {
   return (
-    <div className="rounded-2xl bg-gray-500/50 animate-pulse w-full h-40"></div>
+    <div className="h-44 w-full rounded-2xl bg-gray-500/50 animate-pulse"></div>
   );
 }
