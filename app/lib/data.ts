@@ -50,7 +50,7 @@ export async function fetchNowPlaying() {
 export async function fetchFilteredMovies(query: string, currentPage: number) {
     try {
         const response = await fetch(
-            `${baseUrl}/search/movie?query=${query}&page=${currentPage}`,
+            `${baseUrl}/search/movie?include_adult=false&language=en-US&query=${query}&page=${currentPage}`,
             {
                 headers,
                 method: "Get",

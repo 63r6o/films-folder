@@ -36,7 +36,7 @@ export default function MovieCard({
       <div className="hidden absolute top-full bg-gradient-radial to-gray-900 from-gray-700/60 backdrop-blur-md rounded-b-xl p-4 w-full group-hover:block">
         <h2 className="text-lg text-bold">{movie.title}</h2>
         <div className="flex flex-row flex-wrap text-xs gap-2 pt-4 text-white">
-          {movie.genre_ids.map((id) => (
+          {movie.genre_ids?.map((id) => (
             <GenreTag key={id} genreId={id} />
           ))}
         </div>
